@@ -1,0 +1,14 @@
+.hero-image {
+  position: fixed;
+  top: 25%;
+  left: 60%;
+  z-index: 2;
+  will-change: transform, filter;
+  user-select: none;
+}
+
+.hero-image img {
+  width: 320px;
+  filter: drop-shadow(50px 60px 5px rgba(0,0,0,0.25));
+  will-change: transform;
+}

@@ -1,0 +1,36 @@
+.intro-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.giant-title {
+  font-size: clamp(120px, 20vw, 250px);
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  color: #b4571e;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.text-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.overlap-image {
+  position: absolute;
+  width: 400px;
+  bottom: 60%;
+  left: 5%;
+  z-index: 1;
+  pointer-events: none;
+  transform: rotate(-20deg);
+  opacity: 0.7;
+  
+}

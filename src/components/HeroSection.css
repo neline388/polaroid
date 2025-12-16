@@ -1,0 +1,15 @@
+.hero-section {
+    min-height: 100vh;
+    padding-top: 120px;
+    user-select: none;
+  }
+  
+  .hero-grid {
+    margin-left: calc(70px + 2cm);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto 320px;
+    gap: 3cm;
+    align-items: start;
+    padding-right: 40px;
+  }
+  

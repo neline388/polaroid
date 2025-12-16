@@ -1,0 +1,70 @@
+.content {
+  margin-left: calc(70px + 2cm);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto 320px; /*prevent ovwreflow*/
+  gap: 3cm;
+  align-items: start;
+  padding-right: 40px;
+  overflow-x: hidden;
+}
+
+.brand {
+  position: fixed;
+  top: 12px;
+  left: calc(80px + 24px); 
+  z-index: 10000;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #5a2a10;
+  font-family: "oswalregular", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.resume-button {
+  position: fixed;
+  top: 20px;
+  right: 24px;
+  z-index: 10000;
+  padding: 10px 18px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #5a2a10;
+  background: transparent;
+  border: 1px solid #5a2a10;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+.resume-button:hover {
+  background: #5a2a10;
+  color: #fff;
+}
+
+
+@font-face {
+  font-family: "BBHH";
+  src: url("./assets/fonts/BBHHegarty-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ROBOTOSLAB";
+  src: url("./assets/fonts/RobotoSlab-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "oswalregular";
+  src: url("./assets/fonts/Oswald-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
