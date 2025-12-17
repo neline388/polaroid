@@ -12,3 +12,20 @@
   filter: drop-shadow(50px 60px 5px rgba(0,0,0,0.25));
   will-change: transform;
 }
+
+.hero-image.mobile {
+  position: relative;
+  margin: 2.5rem auto 0;
+  transform: none;
+  filter: none;
+}
+
+.hero-image.mobile img {
+  margin: 0 auto;
+  width: clamp(180px, 60vw, 260px);
+}
+@media (max-width: 768px) {
+  .hero-image {
+    display: none !important;
+  }
+}

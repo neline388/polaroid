@@ -18,7 +18,6 @@ const Sidebar = () => {
 
   return (
     <>
-      {/* MAIN SIDEBAR */}
       <div className="sidebar">
         <div
           className="icon"
@@ -41,7 +40,6 @@ const Sidebar = () => {
         </div>
       </div>
 
-      {/* MENU SIDEBAR */}
       <div className={`dropdown-menu ${open ? "open" : ""}`}>
         <ul>
           <li onClick={() => scrollToSection("home")}>Home</li>
@@ -59,7 +57,6 @@ const Sidebar = () => {
         </ul>
       </div>
 
-      {/* SEARCH SIDEBAR */}
       <div className={`search-panel ${searchOpen ? "open" : ""}`}>
         <div className="search-content">
           <input
@@ -70,7 +67,6 @@ const Sidebar = () => {
         </div>
       </div>
 
-      {/* CONTACT MODAL */}
       {contactOpen && (
         <div
           className="contact-overlay"

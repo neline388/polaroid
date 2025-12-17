@@ -14,17 +14,17 @@ const SettingsSection = () => {
 
       <div className="columns-wrapper">
         <div className="text-columns">
-          <p className="quote secondary">
+          <p className="quote">
           There have been days when I wished to be separated from my body, but today wasn’t one of those days.
           This space is about exploration without restriction.
           </p>
 
-          <p className="quote primary">
+          <p className="quote">
           The efficiency with which he paired the socks in the drawer was quite admirable.          
           Built to evolve, built to last.
           </p>
 
-          <p className="quote secondary">
+          <p className="quote">
           If you really strain your ears, you can just about hear the sound of no one giving a damn.
             The future belongs to those who create it.
           </p>

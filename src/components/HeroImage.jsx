@@ -5,19 +5,25 @@ const clamp = (v, min = 0, max = 1) => Math.min(Math.max(v, min), max);
 const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
 
 const HeroImage = () => {
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
   const [progress, setProgress] = useState(0);
   const [dockY, setDockY] = useState(null);
   const [isDocked, setIsDocked] = useState(false);
 
   useEffect(() => {
+    if (isMobile) return;
+
     const slot = document.getElementById("hero-image-slot");
     if (!slot) return;
 
     const rect = slot.getBoundingClientRect();
     setDockY(rect.top + window.scrollY);
-  }, []);
+  }, [isMobile]);
 
   useEffect(() => {
+    if (isMobile) return;
+
     const onScroll = () => {
       const vh = window.innerHeight;
       const y = window.scrollY;
@@ -40,9 +46,17 @@ const HeroImage = () => {
     onScroll();
 
     return () => window.removeEventListener("scroll", onScroll);
-  }, [dockY]);
+  }, [dockY, isMobile]);
 
   const eased = easeOutCubic(progress);
+
+  if (isMobile) {
+    return (
+      <div className="hero-image mobile">
+        <img src="/images/camera.png" alt="Camera" />
+      </div>
+    );
+  }
 
   return (
     <div
@@ -52,12 +66,12 @@ const HeroImage = () => {
         top: isDocked ? dockY : "25%",
         left: "60%",
         transform: isDocked
-          ? "translate(-50%, 0) rotate(0deg) scale(1)"
+          ? "translate(-50%, 0)"
           : `
-            translate(-50%, ${eased * 200}px)
-            rotate(${15 * (1 - eased)}deg)
-            scale(${1.05 - eased * 0.05})
-          `,
+              translate(-50%, ${eased * 200}px)
+              rotate(${15 * (1 - eased)}deg)
+              scale(${1.05 - eased * 0.05})
+            `,
         filter: `blur(${3 * (1 - eased)}px)`,
       }}
     >
