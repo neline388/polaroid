@@ -76,7 +76,7 @@ const Sidebar = () => {
             className="contact-modal"
             onClick={(e) => e.stopPropagation()}
           >
-            <img src="/images/contact.png" alt="Contact" />
+            <img src="/polaroid/images/contact.png" alt="Contact" />
           </div>
         </div>
       )}
