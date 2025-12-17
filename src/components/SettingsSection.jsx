@@ -4,33 +4,14 @@ const SettingsSection = () => {
   return (
     <section id="services" className="page-section">
 
-<div className="background-images">
-  <img
-    src={`${import.meta.env.BASE_URL}images/3.png`}
-    className="bg-img img-3"
-    alt="img3"
-  />
-  <img
-    src={`${import.meta.env.BASE_URL}images/2.png`}
-    className="bg-img img-2"
-    alt="img2"
-  />
-  <img
-    src={`${import.meta.env.BASE_URL}images/1.png`}
-    className="bg-img img-1"
-    alt="img1"
-  />
-  <img
-    src={`${import.meta.env.BASE_URL}images/4.png`}
-    className="bg-img img-4"
-    alt="img4"
-  />
-  <img
-    src={`${import.meta.env.BASE_URL}images/5.png`}
-    className="bg-img img-5"
-    alt="img5"
-  />
-</div>
+      <div className="background-images">
+        <img src="/polaroid/images/3.png" className="bg-img img-3" alt="img3" />
+        <img src="/images/2.png" className="bg-img img-2" alt="img2" />
+        <img src="/images/1.png" className="bg-img img-1" alt="img1" />
+        <img src="/images/4.png" className="bg-img img-4" alt="img4" />
+        <img src="/images/5.png" className="bg-img img-5" alt="img5" />
+      </div>
+
       <div className="columns-wrapper">
         <div className="text-columns">
           <p className="quote">
