@@ -8,7 +8,7 @@ const IntroSection = () => {
         <span className="text-wrap">
           PICTURES
           <img
-            src="/images/polaroiddrawing.png"
+            src="/polaroid/images/polaroiddrawing.png"
             alt="drawing"
             className="overlap-image"
           />

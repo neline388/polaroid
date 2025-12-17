@@ -75,7 +75,7 @@ const HeroImage = () => {
         filter: `blur(${3 * (1 - eased)}px)`,
       }}
     >
-      <img src="/images/camera.png" alt="Camera" />
+      <img src="/polaroid/images/camera.png" alt="Camera" />
     </div>
   );
 };
