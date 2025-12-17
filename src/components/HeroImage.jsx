@@ -53,8 +53,10 @@ const HeroImage = () => {
   if (isMobile) {
     return (
       <div className="hero-image mobile">
-        <img src="/images/camera.png" alt="Camera" />
-      </div>
+<img
+  src={`${import.meta.env.BASE_URL}images/camera.png`}
+  alt="Camera"
+/>      </div>
     );
   }
 
