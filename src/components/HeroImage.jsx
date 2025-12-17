@@ -53,7 +53,7 @@ const HeroImage = () => {
   if (isMobile) {
     return (
       <div className="hero-image mobile">
-        <img src="/images/camera.png" alt="Camera"/>
+        <img src="/polaroid/images/camera.png" alt="Camera"/>
       </div>
     );
   }
