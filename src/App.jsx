@@ -12,7 +12,7 @@ function App() {
         NEGAR LALEH
       </div>
       <a
-        href="/polaroid/negarlaleh-resume.pdf"
+        href="/negarlaleh-resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="resume-button"
